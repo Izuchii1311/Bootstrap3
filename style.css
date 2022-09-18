@@ -1,0 +1,107 @@
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+
+.jumbotron {
+    height: 400px;
+    background-image: url(../bootstrap-3.4.1-dist/img/interlude_16\ -\ Copy.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 25px;
+    overflow: hidden;
+}
+
+.jumbotron img {
+    width: 200px;
+    border: 5px solid pink;
+    box-shadow: 1px 1px 10px rgb(255, 199, 199);
+}
+
+.jumbotron h2 {
+    color: white;
+    text-shadow: 0 0 7px black, 0 0 15px rgb(255, 1, 1);
+}
+
+.jumbotron p {
+    font-size: 14px;
+    letter-spacing: 5px;
+    background-color: rgb(255,255,255,0.5);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    display: inline-block;
+    padding: 5px;
+}
+
+hr {
+    width: 200px;
+    border-top: 2px solid orange;
+    margin-top: -5px;
+}
+
+section {
+    min-height: 600px;
+}
+
+.pKiri, .pKanan {   
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.pKanan {
+     transform: translate(50px, 0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.about {
+    min-height: 300px;
+}
+
+.portofolio {
+    background-color: #eee;
+}
+
+.portofolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: .5s;
+}
+
+.portofolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+
+.contact {
+    min-height: 700px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    background-color: rgb(27, 27, 27);
+    padding-top: 30px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+}
+footer p i {
+    color: orange;
+}
+
+footer a {
+    color: white;
+}
